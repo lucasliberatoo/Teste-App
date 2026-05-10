@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:           #f0ede8;
+  --surface:      #faf9f7;
+  --surface2:     #ffffff;
+  --text:         #1a1814;
+  --text2:        #6b6760;
+  --text3:        #a09d98;
+  --accent:       #2d5be3;
+  --accent-light: #e8eefb;
+  --accent-dark:  #1a3fbb;
+  --success:      #16a34a;
+  --success-light:#dcfce7;
+  --danger:       #dc2626;
+  --danger-light: #fee2e2;
+  --border:       #e2ded8;
+  --border2:      #ccc9c2;
+  --radius:       12px;
+  --radius-lg:    18px;
+  --shadow:       0 2px 12px rgba(0,0,0,0.08);
+  --shadow-lg:    0 8px 32px rgba(0,0,0,0.12);
+  --avatar-a:     linear-gradient(135deg, #2d5be3 0%, #7c3aed 100%);
+  --avatar-b:     linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+}
+
+html, body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.2;
+}
+
+a { color: var(--accent); }
