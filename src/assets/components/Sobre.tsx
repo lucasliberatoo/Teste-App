@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom"
 import "./css/Sobre.css"
 
 const devs = [
@@ -29,7 +28,7 @@ const techs = [
 ]
 
 function Sobre() {
-  const navigate = useNavigate()
+
 
   return (
     <main className="page fade">

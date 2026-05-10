@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Home from "./assets/components/Home"
 import Sobre from "./assets/components/Sobre"
 import Cadastro from "./assets/components/Cadastro"
@@ -12,12 +12,10 @@ export type User = {
 }
 
 function App() {
-  const [user, setUser] = useState<User | null>(null)
-
-  useEffect(() => {
+  const [user, setUser] = useState<User | null>(() => {
     const stored = localStorage.getItem("user")
-    if (stored) setUser(JSON.parse(stored))
-  }, [])
+    return stored ? JSON.parse(stored) : null
+  })
 
   function login(userData: User) {
     setUser(userData)
